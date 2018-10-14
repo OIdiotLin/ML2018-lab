@@ -1,6 +1,9 @@
 # dataset
-
 dataset
+*.dat
+
+# pkl
+*.pkl
 
 
 # jupyter notebook
