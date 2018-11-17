@@ -19,7 +19,7 @@ def load_dataset():
     def npd_features(imgs):
         features = np.empty(shape=(0, SCALE_SIZE[0] * (SCALE_SIZE[0]-1) // 2))
         for i in range(len(imgs)):
-            feature = NPDFeature((imgs[i] * 255).astype(np.int8)).extract()
+            feature = NPDFeature((imgs[i] * 255).astype(np.uint8)).extract()
             features = np.vstack((features, feature))
         print(features.shape)
         return features
